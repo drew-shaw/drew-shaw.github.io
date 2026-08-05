@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What actually decides IPTV picture quality on a smart TV</title>
-  <meta name="description" content="Picture quality on a streaming box is decided long before the picture reaches the screen, and most of the levers sit outside the app. Working out which one is binding takes a few minutes and saves a lot of guesswork.">
+  <title>Notes On Testing A Streaming Setup</title>
+  <meta name="description" content="I keep these notes because I end up doing the same job every few months for someone in my family, and doing it in the wrong order costs an evening.">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="What actually decides IPTV picture quality on a smart TV">
-  <meta property="og:description" content="Picture quality on a streaming box is decided long before the picture reaches the screen, and most of the levers sit outside the app. Working out which one is binding takes a few minutes and saves a lot of guesswork.">
+  <meta property="og:title" content="Notes On Testing A Streaming Setup">
+  <meta property="og:description" content="I keep these notes because I end up doing the same job every few months for someone in my family, and doing it in the wrong order costs an evening.">
   <link rel="canonical" href="">
   <style>
     :root{--ink:#1a1a1a;--muted:#666;--rule:#e6e6e6;--accent:#0b62d6;--bg:#fff}
@@ -38,19 +38,18 @@
 </head>
 <body>
   <div class="wrap">
-    <header class="site"><a href="/">The Feed Room</a></header>
+    <header class="site"><a href="/">The Stream Desk</a></header>
     <article>
-      <h1>What actually decides IPTV picture quality on a smart TV</h1>
-      <p class="byline">By Lena Fischer · <time datetime="2026-07-30">July 30, 2026</time></p>
-      <p>Picture quality on a streaming box is decided long before the picture reaches the screen, and most of the levers sit outside the app. Working out which one is binding takes a few minutes and saves a lot of guesswork.</p>
-      <p>The first is the source resolution. A channel delivered at 1080p will not improve on a 4K panel; the television upscales it, and upscaling adds sharpness artefacts rather than detail. If two channels look different on the same set, compare their source resolutions before touching any setting.</p>
-      <p>The second is bitrate, which matters more than resolution and is quoted far less often. A 1080p stream at 8 Mbit/s looks better than a 4K stream at 6, because compression artefacts in fast motion are what the eye actually notices. Sport is the honest test: a stream that looks fine on a news anchor can fall apart on a football pitch.</p>
-      <p>The third is the decoder in the device. Older boxes decode H.264 in hardware but fall back to software for HEVC, which drops frames under load. If a channel stutters only in HEVC, the device is the constraint, not the connection.</p>
-      <p>Fourth is the panel itself. Motion handling and local dimming vary enormously between sets at the same nominal resolution, and no stream setting compensates for a slow panel.</p>
-      <p>A practical way to separate these is to watch one channel on two different devices on the same network. If quality tracks the device, the decoder or the panel is responsible. A service such as <a href="https://lemotv.online/">lemo tv iptv</a> lists the resolutions and codecs it delivers per channel, which makes that comparison possible without guessing at what the source is sending.</p>
-      <p>For background, the [https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding HEVC] article covers the codec trade-offs, and the [https://en.wikipedia.org/wiki/Bit_rate bit rate] article explains why the bitrate figure dominates perceived quality.</p>
+      <h1>Notes On Testing A Streaming Setup</h1>
+      <p class="byline">By Dana Cole · <time datetime="2026-08-05">August 05, 2026</time></p>
+      <p>I keep these notes because I end up doing the same job every few months for someone in my family, and doing it in the wrong order costs an evening.</p>
+      <p>Network first, before any app. Put the device on the connection you will really use, at the hour you will really use it. A test at noon on a quiet line proves nothing about eight in the evening. If a cable is possible, use one; most of the buffering complaints I hear turn out to be a box sitting three rooms from the router.</p>
+      <p>Guide second. Let the listings load completely and look for actual programme names rather than a wall of numbers. Building reliable listings data is real engineering - the BBC has written about the work behind it (https://www.bbc.co.uk/rd/blog) - and a service that cannot manage it is saving money somewhere less visible.</p>
+      <p>Settings third. Match output resolution to the panel rather than the maximum offered, because a device straining to push pixels the screen cannot display is just heat and stutter.</p>
+      <p>Then watch one full programme, start to finish, before deciding anything. Short clips hide exactly the faults that matter, and <a href="https://ssiptv.org/">ssiptv</a> is where I write down what I find.</p>
+      <p>Wikipedia&#x27;s overview of how IPTV works (https://en.wikipedia.org/wiki/Internet_Protocol_television) is a fair primer on the plumbing underneath.</p>
     </article>
-    <footer class="site">© The Feed Room. Independent commentary. Sources linked inline.</footer>
+    <footer class="site">© The Stream Desk. Independent commentary. Sources linked inline.</footer>
   </div>
 </body>
 </html>
